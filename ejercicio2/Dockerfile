@@ -8,4 +8,4 @@ RUN ng build
 
 FROM nginx:latest
 COPY --from=builder /app/dist/ListRickMortyPagesHTTP/ /usr/share/nginx/html
-EXPOSE 8081
+EXPOSE 80
